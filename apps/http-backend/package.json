@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build":"tsc -b",
-    "start":"node dist/index.js",
-    "dev":"pnpm run build && pnpm run dev"
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm run start"
   },
   "dependencies": {
-    "@repo/typescript-config":"workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2"
   },
   "keywords": [],
   "author": "",
